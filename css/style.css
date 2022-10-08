@@ -16,12 +16,12 @@
 
 body{
     display: grid;
+    grid-template-rows: 120px 1fr 450px;
     grid-template-columns: 100%;
     grid-template-areas:"header"
                         "main"
                         "footer";
 }
-
 header{
     grid-area: header; 
 }
@@ -183,7 +183,7 @@ header{
     list-style: none;
     display: grid;
     grid-template-rows: 400px 400px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:"foto1 texto1"
                         "texto2 foto2";
 }
