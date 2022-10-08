@@ -107,7 +107,6 @@ header{
 .main__index{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
     grid-template-areas:"index_img"
                         "beneficios";
 }
@@ -153,7 +152,6 @@ header{
 .main__quienes_somos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 700px;
     grid-template-areas:"quienesSomos_img"
                         "quienesSomos";
 }
