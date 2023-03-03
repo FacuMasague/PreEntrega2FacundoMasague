@@ -12,7 +12,7 @@ let sumaProductos = 0
 let carrito = []
 function suma(numero, multiplicacion){
     sumaProductos += productos[numero].precio * Number(multiplicacion)
-    carrito.push(productos[numero].producto)
+    carrito.push(" " + multiplicacion + " " + productos[numero].producto + "s")
 
     return sumaProductos + carrito
 }
@@ -25,7 +25,7 @@ while (eleccion !== "Listo") {
     Pepino`)
 
     let multiplicacion
-    if (eleccion !== "Listo" || eleccion !== "Carrito") {
+    if (eleccion == "Manzana" || eleccion == "Banana" || eleccion == "Piña" || eleccion == "Pepino") {
         multiplicacion = prompt("En que cantidad desea comprar el/la " + eleccion)
     }
 
@@ -39,8 +39,6 @@ while (eleccion !== "Listo") {
         suma(3, multiplicacion)
     }
 }
-
-carrito.join(", ")
 
 let eleccionFinal
 
